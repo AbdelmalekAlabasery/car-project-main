@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "889366808180",
-    "project_id": "car-project-b2670",
-    "storage_bucket": "car-project-b2670.firebasestorage.app"
+    "project_number": "330566038499",
+    "project_id": "car-project-abdelmalek",
+    "storage_bucket": "car-project-abdelmalek.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:889366808180:android:4b968830ffc035afa33321",
+        "mobilesdk_app_id": "1:330566038499:android:5dbabffc362b72cc23a6d6",
         "android_client_info": {
           "package_name": "com.example.car_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBKxGqT6ACVB30dlXAXR-ivBRH-1ZCqx_I"
+          "current_key": "AIzaSyAwVloT9LZUm5MPHponSMjbxOSIr2WeV3c"
         }
       ],
       "services": {

@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -49,20 +40,49 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAQF3VcS17pdF6mzlDDVr_un2bB2I6wigc',
+    appId: '1:330566038499:web:57ccc7ca6fbe49d423a6d6',
+    messagingSenderId: '330566038499',
+    projectId: 'car-project-abdelmalek',
+    authDomain: 'car-project-abdelmalek.firebaseapp.com',
+    storageBucket: 'car-project-abdelmalek.firebasestorage.app',
+    measurementId: 'G-E34E7KSP7E',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBKxGqT6ACVB30dlXAXR-ivBRH-1ZCqx_I',
-    appId: '1:889366808180:android:4b968830ffc035afa33321',
-    messagingSenderId: '889366808180',
-    projectId: 'car-project-b2670',
-    storageBucket: 'car-project-b2670.firebasestorage.app',
+    apiKey: 'AIzaSyAwVloT9LZUm5MPHponSMjbxOSIr2WeV3c',
+    appId: '1:330566038499:android:5dbabffc362b72cc23a6d6',
+    messagingSenderId: '330566038499',
+    projectId: 'car-project-abdelmalek',
+    storageBucket: 'car-project-abdelmalek.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB4Lpe_OFpt0761_u-TCFHQD7mh3KF5hAQ',
-    appId: '1:889366808180:ios:9e062acf7eda2314a33321',
-    messagingSenderId: '889366808180',
-    projectId: 'car-project-b2670',
-    storageBucket: 'car-project-b2670.firebasestorage.app',
+    apiKey: 'AIzaSyC4R3LRVuuOE2zh-Vv8Fp_hVZl_n806_xo',
+    appId: '1:330566038499:ios:acc14e8a1b92ad6c23a6d6',
+    messagingSenderId: '330566038499',
+    projectId: 'car-project-abdelmalek',
+    storageBucket: 'car-project-abdelmalek.firebasestorage.app',
     iosBundleId: 'com.example.carApp',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyC4R3LRVuuOE2zh-Vv8Fp_hVZl_n806_xo',
+    appId: '1:330566038499:ios:acc14e8a1b92ad6c23a6d6',
+    messagingSenderId: '330566038499',
+    projectId: 'car-project-abdelmalek',
+    storageBucket: 'car-project-abdelmalek.firebasestorage.app',
+    iosBundleId: 'com.example.carApp',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAQF3VcS17pdF6mzlDDVr_un2bB2I6wigc',
+    appId: '1:330566038499:web:7fd1dd179d33067423a6d6',
+    messagingSenderId: '330566038499',
+    projectId: 'car-project-abdelmalek',
+    authDomain: 'car-project-abdelmalek.firebaseapp.com',
+    storageBucket: 'car-project-abdelmalek.firebasestorage.app',
+    measurementId: 'G-XHZJD64BWN',
   );
 }
